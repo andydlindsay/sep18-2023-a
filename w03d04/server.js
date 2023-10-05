@@ -7,13 +7,13 @@ const port = 3000;
 
 // users database
 const users = {
-  ghjk: {
-    id: "ghjk",
+  abc: {
+    id: "abc",
     email: "a@a.com",
     password: "1234",
   },
-  j9kl: {
-    id: "j9kl",
+  def: {
+    id: "def",
     email: "b@b.com",
     password: "5678",
   },
@@ -134,7 +134,7 @@ app.post("/register", (req, res) => {
 
   // the email must be unique
   // add the new user to the users object
-  const id = Math.random().toString(36).substring(2, 6); // random 4 character string
+  const id = Math.random().toString(36).substring(2, 5); // random 3 character string
 
   const user = {
     id: id,
